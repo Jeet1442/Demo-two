@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-11-14T18:09:38 IST" name="Suite" finished-at="2023-11-14T18:10:48 IST" duration-ms="70576">
+    <groups>
+    </groups>
+    <test started-at="2023-11-14T18:09:38 IST" name="Test" finished-at="2023-11-14T18:10:48 IST" duration-ms="70576">
+      <class name="Package.Automation_eCommerce">
+        <test-method signature="E_Comerce()[pri:0, instance:Package.Automation_eCommerce@12aba8be]" started-at="2023-11-14T18:09:38 IST" name="E_Comerce" finished-at="2023-11-14T18:10:48 IST" duration-ms="70515" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- E_Comerce -->
+      </class> <!-- Package.Automation_eCommerce -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
