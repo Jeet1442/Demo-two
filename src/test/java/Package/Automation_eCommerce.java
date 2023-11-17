@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -16,10 +17,14 @@ import PageObjects.LandingPage;
 public class Automation_eCommerce {
 
 	@Test
-	public void E_Comerce() {
+	public void E_Comerce() throws InterruptedException {
 		
-		WebDriver driver= new FirefoxDriver();
-		//WebDriver driver=new ChromeDriver();
+		//WebDriver driver= new FirefoxDriver();
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\debjeet\\eclipse-workspace\\E2E_Udemy\\chromedriver.exe");
+		ChromeOptions opt = new ChromeOptions();
+		opt.addArguments("--remote-allow-origins=*");
+		
+		WebDriver driver=new ChromeDriver(opt);
 		driver.manage().window().maximize();
 		
 		LandingPage landing = new LandingPage(driver);
@@ -28,7 +33,7 @@ public class Automation_eCommerce {
 		landing.LoginApplication("saha.debjeet123@gmail.com", "Debjeet123");
 		
 		
-		
+		Thread.sleep(5000);
 		List<WebElement> items = driver.findElements(By.cssSelector(".col-md-6"));
 		
 		for(int i=0; i<items.size();i++) {
@@ -45,9 +50,11 @@ public class Automation_eCommerce {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#toast-container")));
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".ng-animating")));
 		
+		Thread.sleep(5000);
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[contains(@routerlink,'cart')]")));
 		driver.findElement(By.xpath("//button[contains(@routerlink,'cart')]")).click();
 		
+		Thread.sleep(5000);
 		driver.findElement(By.xpath("//button[contains(text(),'Checkout')]")).click();
 		
 		driver.findElement(By.xpath("//input[@placeholder='Select Country']")).sendKeys("India");
