@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-17T10:39:54 IST" name="Default suite" finished-at="2023-11-17T10:40:29 IST" duration-ms="34974">
+  <suite started-at="2023-11-18T11:29:19 IST" name="Default suite" finished-at="2023-11-18T11:30:04 IST" duration-ms="44905">
     <groups>
     </groups>
-    <test started-at="2023-11-17T10:39:54 IST" name="Default test" finished-at="2023-11-17T10:40:29 IST" duration-ms="34974">
+    <test started-at="2023-11-18T11:29:19 IST" name="Default test" finished-at="2023-11-18T11:30:04 IST" duration-ms="44905">
       <class name="Package.Automation_eCommerce">
-        <test-method signature="E_Comerce()[pri:0, instance:Package.Automation_eCommerce@2805d709]" started-at="2023-11-17T10:39:54 IST" name="E_Comerce" finished-at="2023-11-17T10:40:29 IST" duration-ms="34933" status="PASS">
+        <test-method signature="E_Comerce()[pri:0, instance:Package.Automation_eCommerce@2805d709]" started-at="2023-11-18T11:29:19 IST" name="E_Comerce" finished-at="2023-11-18T11:30:04 IST" duration-ms="44868" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- E_Comerce -->

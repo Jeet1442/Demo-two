@@ -20,7 +20,7 @@ public class Automation_eCommerce {
 	public void E_Comerce() throws InterruptedException {
 		
 		//WebDriver driver= new FirefoxDriver();
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\debjeet\\eclipse-workspace\\E2E_Udemy\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:/Users/debjeet/eclipse-workspace/E2E_Udemy/chromedriver.exe");
 		ChromeOptions opt = new ChromeOptions();
 		opt.addArguments("--remote-allow-origins=*");
 		
