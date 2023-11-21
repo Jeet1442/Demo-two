@@ -24,7 +24,7 @@ public class Automation_eCommerce {
 		ChromeOptions opt = new ChromeOptions();
 		
 		opt.addArguments("--remote-allow-origins=*");
-		opt.addArguments("--headless");
+		//opt.addArguments("--headless");
 		
 		WebDriver driver=new ChromeDriver(opt);
 		driver.manage().window().maximize();
