@@ -22,7 +22,9 @@ public class Automation_eCommerce {
 		//WebDriver driver= new FirefoxDriver();
 		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
 		ChromeOptions opt = new ChromeOptions();
+		
 		opt.addArguments("--remote-allow-origins=*");
+		opt.addArguments("--headless");
 		
 		WebDriver driver=new ChromeDriver(opt);
 		driver.manage().window().maximize();
